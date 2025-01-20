@@ -1,0 +1,92 @@
+.section-1-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.text-lg{
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-size: 100px;
+    color: #000000;
+}
+.text-hi{
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #000000;
+}
+
+.text-2{
+    padding-left: 15rem;
+}
+.text-name{
+    color: #FD6F00;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+
+.person-img-div{
+    position: relative;
+}
+.rectangle{
+    position: absolute;
+    right: 80px;
+    top: 75px;
+}
+
+.desc-1{
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-size: 21px;
+    color: #000000;
+}
+
+.hire-me-btn{
+    padding: 8px 30px;
+    background-color: #FD6F00;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 5px;
+
+}
+
+.social-site-div{
+    float: right;
+    /* display: flex;
+    justify-content: center; */
+    margin-right: 200px;
+    margin-top: 20px;
+}
+
+
+
+
+.section-2{
+    padding-top: 80px;
+}
+
+.section-2-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: row;
+}
+.rectangle2{
+    position: absolute;
+    left: 80px;
+    top: 95px;
+}
+
+.description-div-2{
+    padding-top: 30px;
+}
+.about-me-text{
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-size: 65px;
+    color: #000000;
+}
