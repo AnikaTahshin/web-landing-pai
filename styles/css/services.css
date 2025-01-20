@@ -1,0 +1,30 @@
+.service-div{
+    background-color: #F8F8F8;
+    border-radius: 14px;
+    margin: 20px;
+    padding: 20px;
+
+}
+
+.service-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-title{
+    /* font-family: serif; */
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-size: 32px;
+    color: #000000;
+}
+
+.text-sm{
+    /* font-family: serif; */
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-size: 19px;
+    color: #000000;
+}

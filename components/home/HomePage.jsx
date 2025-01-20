@@ -6,29 +6,57 @@ import person2 from "../../public/assets/person2.png";
 import rect from "../../public/assets/rect.png";
 import pbar1 from "../../public/assets/pbar1.png";
 
+import service1 from "../../public/assets/service1.png";
+import service2 from "../../public/assets/service2.png";
+import service3 from "../../public/assets/service3.png";
+import service4 from "../../public/assets/service4.png";
+
+
 import "../../styles/css/home.css";
 import ButtonComp from "../button/ButtonComp";
 import SocialSite from "../socialSite/SocialSite";
 import ProgressBar from "../progressbar/ProgressBar";
+import TitleText from "../titleText/TitleText";
+import ServicesCard from "../servicesCard/ServicesCard";
 
 const HomePage = () => {
-
   const progress = [
     {
-      name:"UX",
-      img:pbar1
+      name: "UX",
+      img: pbar1,
     },
     {
-      name:"Website Design",
-      img:pbar1
-    },{
-      name:"App Design",
-      img:pbar1
-    },{
-      name:"Graphic Design",
-      img:pbar1
-    }
-  ]
+      name: "Website Design",
+      img: pbar1,
+    },
+    {
+      name: "App Design",
+      img: pbar1,
+    },
+    {
+      name: "Graphic Design",
+      img: pbar1,
+    },
+  ];
+
+  const services = [
+    {
+      name: "UI/UX",
+      img: service1,
+    },
+    {
+      name: "Website Design",
+      img: service2,
+    },
+    {
+      name: "App Design",
+      img: service3,
+    },
+    {
+      name: "Graphic Design",
+      img: service4,
+    },
+  ];
   return (
     <>
       {/* SECTIONS 1 STARTS */}
@@ -72,37 +100,41 @@ const HomePage = () => {
 
       {/* SECTIONS 2 STARTS */}
       <div className="section-2">
-      <div className="section-2-container">
-        <div className="person-img-div">
-          <Image src={person2} height={617} width={538} alt="" />
-          <Image
-            className="rectangle2"
-            src={rect}
-            height={83}
-            width={374}
-            alt=""
-          />
-        </div>
+        <div className="section-2-container">
+          <div className="person-img-div">
+            <Image src={person2} height={617} width={538} alt="" />
+            <Image
+              className="rectangle2"
+              src={rect}
+              height={83}
+              width={374}
+              alt=""
+            />
+          </div>
 
-        <div className="description-div-2">
-          <p className="about-me-text">About Me</p>
-          <p className="desc-1 font-poppins">Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis tempus pharetra</p>
+          <div className="description-div-2">
+            <p className="about-me-text">About Me</p>
+            <p className="desc-1 font-poppins">
+              Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa
+              nibh lectus netus in. Aliquet donec morbi convallis pretium.
+              Turpis tempus pharetra
+            </p>
 
-          <ProgressBar data={progress} />
+            <ProgressBar data={progress} />
+          </div>
         </div>
       </div>
-      </div>
-
-      
 
       {/* SECTIONS 2 ENDS */}
 
-
-
       {/* SECTIONS 3 STARTS */}
 
-      {/* SECTIONS 3 ENDS */}
+      <div className="section-2">
+        <TitleText text="Services" />
+        <ServicesCard data={services} />
+      </div>
 
+      {/* SECTIONS 3 ENDS */}
     </>
   );
 };
